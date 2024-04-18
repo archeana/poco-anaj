@@ -1,0 +1,132 @@
+/* she soes like this */
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+
+body,
+footer {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+    /* you need to add 100 % in height in both html and body : flex-grow 1/0 flex-shrink  1/0 flex-basis (no %) fixed units px/ auto */
+}
+
+/*  flexwrap */
+header {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header a {
+    flex: 1;
+
+}
+
+main header {
+    flex-direction: column;
+}
+
+nav {
+    width: 100%;
+}
+
+header nav li {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    font-family: sans-serif;
+    padding: 2%;
+}
+
+
+ul,
+li {
+    padding: 0;
+    list-style-type: none;
+
+}
+
+
+/* section img {
+    max-width: 95%;
+    display: flex;
+    justify-content: center;
+} */
+
+img {
+    max-width: 100%;
+    width: 100vw;
+
+}
+
+section h3,
+li,
+a,
+p {
+    font-family: sans-serif;
+    font-size: 16px;
+    list-style-type: none;
+    text-decoration: none;
+    line-height: normal;
+}
+
+section p {
+    color: grey;
+}
+
+section h2,
+h3,
+p {
+    margin: 2%;
+}
+
+main>header strong,
+span {
+    color: blue;
+    display: flex;
+    justify-content: center;
+}
+
+
+section ul {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+}
+
+
+/* section {
+    display: flex;
+    flex-direction: column;
+} */
+
+footer{
+    padding: 14px;
+}
+
+footer img {
+    width: 150px;
+    height: 50px;
+}
+
+header > a > img {
+    width: 150px;
+    height: 50px;
+}
