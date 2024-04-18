@@ -1,0 +1,31 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    margin: 0;
+}
+
+header {
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+main {
+    background-color: rgb(156, 156, 234);
+    padding: 20px;
+}
+
+footer {
+    background-color: aquamarine;
+    padding: 20px;
+}

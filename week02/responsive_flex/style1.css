@@ -1,0 +1,116 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+
+/* Katya solution I just change small things--- all credits to her  https://github.com/katerynadziadok*/
+
+body {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Helvetica, Arial,  sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.45; 
+}
+
+
+   
+
+nav {
+    display: flex;
+    background-color: #5994da;
+    height: 30px;
+    width: 100%;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    background-color: #b2d6ff;
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    height: 500px;
+    width: 100%;
+    background-color: #b1c8a2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+   
+    background-size: 400% 400%;
+
+}
+
+section article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #eaedf0;
+    height: 250px;
+    width: 100%;
+    
+}
+p {
+    padding: 2em;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+section article:nth-of-type(1) {
+    background-color: #d7e9fe;
+}
+section article:nth-of-type(2) {
+    background-color: #f5cf8d;
+    font-size: 1em;
+
+}
+section article:nth-of-type(3) {
+    background-color: #f09a9d;
+    font-size: 1em;
+}
+section article:nth-of-type(4) {
+    background-color: #c8c6fa;
+    font-size: 1em;
+}
+
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    section article {
+        width: 50%;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    section:nth-of-type(1) {
+        order: 1;
+    }
+    section:nth-of-type(2) {
+        height: 650px;
+    }
+    section article {
+        height: 500px;
+        width: calc(100% / 3);
+    }
+    section article:nth-of-type(1) {
+        order: 1;
+        height: 150px;
+        width: 100%;
+    }
+}
