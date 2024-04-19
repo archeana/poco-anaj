@@ -1,0 +1,22 @@
+
+
+Input Telephone number  <- ask user for telephone number
+
+    if the input is empty then print  - add number - 
+    restart
+
+    if text has less than 10 digits  then print - too short -
+    restart
+
+    if there is other characters {abc} other than digits [0123456789] then print - not a number-  
+    restart
+
+    if the input is 10 digits 
+    continue
+        if there is a area code add () - remove
+        else just  add a space between 3 digits  _ _ _  _ _ _  _ _ _ _
+
+    print telephone number 
+
+
+ (_ _ _ ) _ _ _ _ _ _ _
