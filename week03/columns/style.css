@@ -1,0 +1,30 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Helvetica, Arial,  sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.45; 
+}
+
+article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #497caf;
+    height: 250px;
+    width: 100%;
+    
+}
