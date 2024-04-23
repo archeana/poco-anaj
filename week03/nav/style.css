@@ -5,13 +5,15 @@ html {
 	font-size: 10px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
 	box-sizing: inherit;
 }
 
-body{
-    width: 100vw;
-    overflow-x: hidden;
+body {
+	width: 100vw;
+	overflow-x: hidden;
 }
 
 /* visually hiding Checkbox for hamburger icon, 
@@ -27,24 +29,24 @@ but accessible through screen readers and haptic mobile devices */
 
 
 nav li {
-    list-style-type: none;
-    padding: 2%;
-    margin: 0 auto;
+	list-style-type: none;
+	padding: 2%;
+	margin: 0 auto;
 }
 
 nav a {
-    text-decoration: none;
-    font-size: 2rem;
-    color: #1d1b1b;
+	text-decoration: none;
+	font-size: 2rem;
+	color: #1d1b1b;
 }
 
 /*  need to make on the parent directly */
 ul {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    padding: 10px;
-    background-color: #b9e5ea;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	padding: 10px;
+	background-color: #b9e5ea;
 }
 
 
@@ -69,37 +71,37 @@ ul {
 
 /* tablet */
 @media (max-width: 768px) {
-    ul {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
 
 
-/* checkbox menu */
-    input[type=checkbox]:checked+label {
-        background-image: url(/week03/nav/icon-hamburger.svg);
-    }
+	/* checkbox menu */
+	input[type=checkbox]:checked+label {
+		background-image: url(/week03/nav/icon-hamburger.svg);
+	}
 
-    /* checkbox close */
-    input[type=checkbox] + label {
-        background-image: url(/week03/nav/icon-close.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    
-    input[type=checkbox]:checked+label+nav{
-        
-        transform: translateX(100%);
-        transition: transform 400ms ease-in;
-        
-    }
+	/* checkbox close */
+	input[type=checkbox]+label {
+		background-image: url(/week03/nav/icon-close.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
 
-    
-    input[type=checkbox]+label+nav{
-        transition: transform 400ms ease-in;
-        
-    }
+	input[type=checkbox]:checked+label+nav {
+
+		transform: translateX(100%);
+		transition: transform 400ms ease-in;
+
+	}
+
+
+	input[type=checkbox]+label+nav {
+		transition: transform 400ms ease-in;
+
+	}
 
 
 }
