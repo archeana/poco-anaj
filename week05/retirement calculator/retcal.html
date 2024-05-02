@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retirement Calculator</title>
+    <link rel="stylesheet" href="retcal.css">
+    <script src="retcal.js" defer></script>
+  </head>
+  <body>
+    <h2>Retirement Calculator</h2>
+    <form id="retirementForm">
+      <!-- Input field for current age -->
+      <label for="currentAge">Enter your current age:</label>
+      <input type="number" id="currentAge" required /><br /><br />
+
+      <!-- Input field for retirement age -->
+      <label for="retireAge">Enter the age you want to retire:</label>
+      <input type="number" id="retireAge" required /><br /><br />
+
+      <!-- Button to trigger the calculation -->
+      <button type="button" onclick="calculateRetirement()">Calculate</button>
+    </form>
+
+    <!-- Placeholder for the result -->
+    <p id="result"></p>
+  </body>
+</html>
