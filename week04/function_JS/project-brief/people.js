@@ -106,7 +106,7 @@ function listPeople() {
     agePart.innerText = "Age: " + participants[index].age;
 
     const eyecolorPart = document.createElement("p");
-    eyecolorPart.innerTextL = "Eye color: " + participants[index].eyecolor;
+    eyecolorPart.innerText = "Eye color: " + participants[index].eyecolor;
 
     const itPart = document.createElement("p");
     itPart.innerText = "It field: " + participants[index].itfiel;
