@@ -7,14 +7,15 @@ const links = document.getElementById("links");
 //to the content of the tag after the existing content
 
 // Loop through each <h1> element
-for (let i = 0; i < 2; i++) {
+for (let i = 0; i < 3; i++) {
    // Retrieve the original text content of the current <h1> element
    const newHeading = document.createElement("h1");
 
    // Append the original text content to itself
    newHeading.textContent = i + " " + mainHeading.textContent;
    // Append it after the existing <h1> element
-   mainHeading.parentNode.insertBefore(newHeading, mainHeading.nextSibling);
+   // mainHeading.appendChild(newHeading);
+   // mainHeading.insertAdjacentElement('afterend', newHeading);
 }
 
 
