@@ -1,0 +1,46 @@
+body {
+    margin: 0 10%;
+}
+
+img {
+    aspect-ratio: 1 / 1;
+    display: block;
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%;
+    
+}
+
+img  {
+    width: 512px;
+    aspect-ratio: auto 512 / 512;
+    height: 512px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: flex-start;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.selected{
+    opacity: 20%;
+}
