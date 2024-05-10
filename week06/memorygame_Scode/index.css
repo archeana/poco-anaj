@@ -1,0 +1,76 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+ul {
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+    list-style: none;
+    margin: 2rem 3rem;
+    padding: 0;
+}
+
+/* both cards to be on top of it eachother needs to have absolute in both */
+/* then needs the perspective for flip , transform and and z */
+
+li {
+    aspect-ratio: 1;
+    height: auto;
+    perspective: 150rem;
+    position: relative;
+    width: 100%;
+}
+
+div {
+    font-size: 8rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.8s ease;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front {
+    transform: rotateY(180deg);
+}
+
+.back {
+    background-color: #333;
+}
+
+.flipped .front {
+    transform: rotateY(0);
+    z-index: 1;
+}
+
+.flipped .back {
+    transform: rotateY(-180deg);
+}
+
+/* .disabled {
+    /* styles for found matches */
+ 
